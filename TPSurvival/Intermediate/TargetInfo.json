@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "TPSurvival",
+			"Path": "..\\Source\\TPSurvival.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "TPSurvivalEditor",
+			"Path": "..\\Source\\TPSurvivalEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

@@ -1,0 +1,15 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/alexa/OneDrive/Documentos/Github/TPSurvival/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset",
+				"C:/Users/alexa/OneDrive/Documentos/Github/TPSurvival/Content/ThirdPerson/Input/Actions/IA_Sprint.uasset",
+				"C:/Users/alexa/OneDrive/Documentos/Github/TPSurvival/Content/ThirdPerson/Input/IMC_Default.uasset",
+				"C:/Users/alexa/OneDrive/Documentos/Github/TPSurvival/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset"
+			]
+		}
+	]
+}
