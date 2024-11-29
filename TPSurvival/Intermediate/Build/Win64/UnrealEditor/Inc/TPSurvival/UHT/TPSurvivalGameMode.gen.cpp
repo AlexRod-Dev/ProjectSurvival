@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "TPSurvival/TPSurvivalGameMode.h"
+#include "TPSurvival/Public/TPSurvivalGameMode.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeTPSurvivalGameMode() {}
 
@@ -31,7 +31,7 @@ struct Z_Construct_UClass_ATPSurvivalGameMode_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "HideCategories", "Info Rendering MovementReplication Replication Actor Input Movement Collision Rendering HLOD WorldPartition DataLayers Transformation" },
 		{ "IncludePath", "TPSurvivalGameMode.h" },
-		{ "ModuleRelativePath", "TPSurvivalGameMode.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalGameMode.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif // WITH_METADATA
@@ -78,14 +78,14 @@ ATPSurvivalGameMode::~ATPSurvivalGameMode() {}
 // End Class ATPSurvivalGameMode
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Users_alexa_OneDrive_Documentos_Github_TPSurvival_Source_TPSurvival_TPSurvivalGameMode_h_Statics
+struct Z_CompiledInDeferFile_FID_Users_alexa_OneDrive_Documentos_Github_ProjectSurvival_TPSurvival_Source_TPSurvival_Public_TPSurvivalGameMode_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ATPSurvivalGameMode, ATPSurvivalGameMode::StaticClass, TEXT("ATPSurvivalGameMode"), &Z_Registration_Info_UClass_ATPSurvivalGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATPSurvivalGameMode), 2365746139U) },
+		{ Z_Construct_UClass_ATPSurvivalGameMode, ATPSurvivalGameMode::StaticClass, TEXT("ATPSurvivalGameMode"), &Z_Registration_Info_UClass_ATPSurvivalGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATPSurvivalGameMode), 3405732396U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_alexa_OneDrive_Documentos_Github_TPSurvival_Source_TPSurvival_TPSurvivalGameMode_h_595348139(TEXT("/Script/TPSurvival"),
-	Z_CompiledInDeferFile_FID_Users_alexa_OneDrive_Documentos_Github_TPSurvival_Source_TPSurvival_TPSurvivalGameMode_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_alexa_OneDrive_Documentos_Github_TPSurvival_Source_TPSurvival_TPSurvivalGameMode_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_alexa_OneDrive_Documentos_Github_ProjectSurvival_TPSurvival_Source_TPSurvival_Public_TPSurvivalGameMode_h_1807019837(TEXT("/Script/TPSurvival"),
+	Z_CompiledInDeferFile_FID_Users_alexa_OneDrive_Documentos_Github_ProjectSurvival_TPSurvival_Source_TPSurvival_Public_TPSurvivalGameMode_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_alexa_OneDrive_Documentos_Github_ProjectSurvival_TPSurvival_Source_TPSurvival_Public_TPSurvivalGameMode_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

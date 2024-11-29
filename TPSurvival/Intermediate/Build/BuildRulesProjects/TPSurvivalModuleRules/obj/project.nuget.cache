@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XsM2wePNlNFWQ93JSOUkz5vALEr07bymya6DteNyAyl5SfoRAWAMyPcx/JpBBBO6sAvmYeFd/91oQZdrvGkwXQ==",
+  "dgSpecHash": "lrTcFqVjes6afB+h9TrmiBncmi0DZaG1G2KNCulK2KeWkHkJQMMW2TCDJx+p4fZRiH6CKYrgo+qUonFEh//hZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alexa\\OneDrive\\Documentos\\Github\\TPSurvival\\Intermediate\\Build\\BuildRulesProjects\\TPSurvivalModuleRules\\TPSurvivalModuleRules.csproj",
+  "projectFilePath": "C:\\Users\\alexa\\OneDrive\\Documentos\\Github\\ProjectSurvival\\TPSurvival\\Intermediate\\Build\\BuildRulesProjects\\TPSurvivalModuleRules\\TPSurvivalModuleRules.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alexa\\.nuget\\packages\\bitfaster.caching\\2.4.1\\bitfaster.caching.2.4.1.nupkg.sha512",
     "C:\\Users\\alexa\\.nuget\\packages\\blake3\\0.5.1\\blake3.0.5.1.nupkg.sha512",

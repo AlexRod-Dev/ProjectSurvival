@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TPSurvivalModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3514602748aec3885089e74d0f2803b4f6cc5c7c")]
 [assembly: System.Reflection.AssemblyProductAttribute("TPSurvivalModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TPSurvivalModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alexa\\OneDrive\\Documentos\\Github\\TPSurvival\\Intermediate\\Build\\BuildRulesProjects\\TPSurvivalModuleRules\\TPSurvivalModuleRules.csproj": {}
+    "C:\\Users\\alexa\\OneDrive\\Documentos\\Github\\ProjectSurvival\\TPSurvival\\Intermediate\\Build\\BuildRulesProjects\\TPSurvivalModuleRules\\TPSurvivalModuleRules.csproj": {}
   },
   "projects": {
     "C:\\Program Files (x86)\\UE_5.4\\Engine\\Intermediate\\Build\\BuildRulesProjects\\UE5ProgramRules\\UE5ProgramRules.csproj": {
@@ -1239,14 +1239,14 @@
         }
       }
     },
-    "C:\\Users\\alexa\\OneDrive\\Documentos\\Github\\TPSurvival\\Intermediate\\Build\\BuildRulesProjects\\TPSurvivalModuleRules\\TPSurvivalModuleRules.csproj": {
+    "C:\\Users\\alexa\\OneDrive\\Documentos\\Github\\ProjectSurvival\\TPSurvival\\Intermediate\\Build\\BuildRulesProjects\\TPSurvivalModuleRules\\TPSurvivalModuleRules.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexa\\OneDrive\\Documentos\\Github\\TPSurvival\\Intermediate\\Build\\BuildRulesProjects\\TPSurvivalModuleRules\\TPSurvivalModuleRules.csproj",
+        "projectUniqueName": "C:\\Users\\alexa\\OneDrive\\Documentos\\Github\\ProjectSurvival\\TPSurvival\\Intermediate\\Build\\BuildRulesProjects\\TPSurvivalModuleRules\\TPSurvivalModuleRules.csproj",
         "projectName": "TPSurvivalModuleRules",
-        "projectPath": "C:\\Users\\alexa\\OneDrive\\Documentos\\Github\\TPSurvival\\Intermediate\\Build\\BuildRulesProjects\\TPSurvivalModuleRules\\TPSurvivalModuleRules.csproj",
+        "projectPath": "C:\\Users\\alexa\\OneDrive\\Documentos\\Github\\ProjectSurvival\\TPSurvival\\Intermediate\\Build\\BuildRulesProjects\\TPSurvivalModuleRules\\TPSurvivalModuleRules.csproj",
         "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexa\\OneDrive\\Documentos\\Github\\TPSurvival\\Intermediate\\Build\\BuildRulesProjects\\TPSurvivalModuleRules\\obj\\",
+        "outputPath": "C:\\Users\\alexa\\OneDrive\\Documentos\\Github\\ProjectSurvival\\TPSurvival\\Intermediate\\Build\\BuildRulesProjects\\TPSurvivalModuleRules\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -5,11 +5,12 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "TPSurvival/TPSurvivalCharacter.h"
+#include "TPSurvival/Public/TPSurvivalCharacter.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeTPSurvivalCharacter() {}
 
 // Begin Cross Module References
+CABLECOMPONENT_API UClass* Z_Construct_UClass_UCableComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_USkeletalMesh_NoRegister();
@@ -37,7 +38,7 @@ struct Z_Construct_UClass_ATPSurvivalCharacter_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "TPSurvivalCharacter.h" },
-		{ "ModuleRelativePath", "TPSurvivalCharacter.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CameraBoom_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
@@ -46,7 +47,7 @@ struct Z_Construct_UClass_ATPSurvivalCharacter_Statics
 		{ "Comment", "/** Camera boom positioning the camera behind the character */" },
 #endif
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "TPSurvivalCharacter.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Camera boom positioning the camera behind the character" },
 #endif
@@ -58,7 +59,7 @@ struct Z_Construct_UClass_ATPSurvivalCharacter_Statics
 		{ "Comment", "/** Third Person camera */" },
 #endif
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "TPSurvivalCharacter.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Third Person camera" },
 #endif
@@ -70,7 +71,7 @@ struct Z_Construct_UClass_ATPSurvivalCharacter_Statics
 		{ "Comment", "/** First Person Camera */" },
 #endif
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "TPSurvivalCharacter.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "First Person Camera" },
 #endif
@@ -81,9 +82,21 @@ struct Z_Construct_UClass_ATPSurvivalCharacter_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Mesh da arma */" },
 #endif
-		{ "ModuleRelativePath", "TPSurvivalCharacter.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Mesh da arma" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GrappleCable_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Input" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Grapple Input Action */" },
+#endif
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Grapple Input Action" },
 #endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultMappingContext_MetaData[] = {
@@ -92,7 +105,7 @@ struct Z_Construct_UClass_ATPSurvivalCharacter_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** MappingContext */" },
 #endif
-		{ "ModuleRelativePath", "TPSurvivalCharacter.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "MappingContext" },
 #endif
@@ -103,7 +116,7 @@ struct Z_Construct_UClass_ATPSurvivalCharacter_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Jump Input Action */" },
 #endif
-		{ "ModuleRelativePath", "TPSurvivalCharacter.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Jump Input Action" },
 #endif
@@ -114,7 +127,7 @@ struct Z_Construct_UClass_ATPSurvivalCharacter_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Move Input Action */" },
 #endif
-		{ "ModuleRelativePath", "TPSurvivalCharacter.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Move Input Action" },
 #endif
@@ -125,7 +138,7 @@ struct Z_Construct_UClass_ATPSurvivalCharacter_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Look Input Action */" },
 #endif
-		{ "ModuleRelativePath", "TPSurvivalCharacter.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Look Input Action" },
 #endif
@@ -136,7 +149,7 @@ struct Z_Construct_UClass_ATPSurvivalCharacter_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Aim Input Action */" },
 #endif
-		{ "ModuleRelativePath", "TPSurvivalCharacter.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Aim Input Action" },
 #endif
@@ -147,7 +160,7 @@ struct Z_Construct_UClass_ATPSurvivalCharacter_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Aim Input Action */" },
 #endif
-		{ "ModuleRelativePath", "TPSurvivalCharacter.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Aim Input Action" },
 #endif
@@ -158,7 +171,7 @@ struct Z_Construct_UClass_ATPSurvivalCharacter_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Switch POV Input Action */" },
 #endif
-		{ "ModuleRelativePath", "TPSurvivalCharacter.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Switch POV Input Action" },
 #endif
@@ -169,7 +182,7 @@ struct Z_Construct_UClass_ATPSurvivalCharacter_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Interact Input Action */" },
 #endif
-		{ "ModuleRelativePath", "TPSurvivalCharacter.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Interact Input Action" },
 #endif
@@ -180,68 +193,80 @@ struct Z_Construct_UClass_ATPSurvivalCharacter_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Fire Input Action */" },
 #endif
-		{ "ModuleRelativePath", "TPSurvivalCharacter.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Fire Input Action" },
 #endif
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Grapple_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Input" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Grapple Input Action */" },
+#endif
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Grapple Input Action" },
+#endif
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bIsAiming_MetaData[] = {
 		{ "Category", "Camera" },
-		{ "ModuleRelativePath", "TPSurvivalCharacter.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bIsTPP_MetaData[] = {
 		{ "Category", "Camera" },
-		{ "ModuleRelativePath", "TPSurvivalCharacter.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bIsSprinting_MetaData[] = {
 		{ "Category", "CharacterMovement" },
-		{ "ModuleRelativePath", "TPSurvivalCharacter.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_movementSpeed_MetaData[] = {
 		{ "Category", "CharacterMovement" },
-		{ "ModuleRelativePath", "TPSurvivalCharacter.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_sneakMovementSpeed_MetaData[] = {
 		{ "Category", "CharacterMovement" },
-		{ "ModuleRelativePath", "TPSurvivalCharacter.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_sprintMovementSpeed_MetaData[] = {
 		{ "Category", "CharacterMovement" },
-		{ "ModuleRelativePath", "TPSurvivalCharacter.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_currentHealth_MetaData[] = {
 		{ "Category", "Combat" },
-		{ "ModuleRelativePath", "TPSurvivalCharacter.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_maxHealth_MetaData[] = {
 		{ "Category", "Combat" },
-		{ "ModuleRelativePath", "TPSurvivalCharacter.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_currentFood_MetaData[] = {
 		{ "Category", "Stats" },
-		{ "ModuleRelativePath", "TPSurvivalCharacter.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_maxFood_MetaData[] = {
 		{ "Category", "Stats" },
-		{ "ModuleRelativePath", "TPSurvivalCharacter.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_currentWater_MetaData[] = {
 		{ "Category", "Stats" },
-		{ "ModuleRelativePath", "TPSurvivalCharacter.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_maxWater_MetaData[] = {
 		{ "Category", "Stats" },
-		{ "ModuleRelativePath", "TPSurvivalCharacter.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TraceChannelProperty_MetaData[] = {
 		{ "Category", "Collision" },
-		{ "ModuleRelativePath", "TPSurvivalCharacter.h" },
+		{ "ModuleRelativePath", "Public/TPSurvivalCharacter.h" },
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CameraBoom;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_TPPCamera;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FPPCamera;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_WeaponMesh;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_GrappleCable;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_DefaultMappingContext;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_JumpAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MoveAction;
@@ -251,6 +276,7 @@ struct Z_Construct_UClass_ATPSurvivalCharacter_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SwitchPov;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Interact;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Fire;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_Grapple;
 	static void NewProp_bIsAiming_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsAiming;
 	static void NewProp_bIsTPP_SetBit(void* Obj);
@@ -278,6 +304,7 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATPSurvivalCha
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATPSurvivalCharacter_Statics::NewProp_TPPCamera = { "TPPCamera", nullptr, (EPropertyFlags)0x00400000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATPSurvivalCharacter, TPPCamera), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TPPCamera_MetaData), NewProp_TPPCamera_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATPSurvivalCharacter_Statics::NewProp_FPPCamera = { "FPPCamera", nullptr, (EPropertyFlags)0x004000000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATPSurvivalCharacter, FPPCamera), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FPPCamera_MetaData), NewProp_FPPCamera_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATPSurvivalCharacter_Statics::NewProp_WeaponMesh = { "WeaponMesh", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATPSurvivalCharacter, WeaponMesh), Z_Construct_UClass_USkeletalMesh_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WeaponMesh_MetaData), NewProp_WeaponMesh_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATPSurvivalCharacter_Statics::NewProp_GrappleCable = { "GrappleCable", nullptr, (EPropertyFlags)0x004000000008001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATPSurvivalCharacter, GrappleCable), Z_Construct_UClass_UCableComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_GrappleCable_MetaData), NewProp_GrappleCable_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATPSurvivalCharacter_Statics::NewProp_DefaultMappingContext = { "DefaultMappingContext", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATPSurvivalCharacter, DefaultMappingContext), Z_Construct_UClass_UInputMappingContext_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultMappingContext_MetaData), NewProp_DefaultMappingContext_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATPSurvivalCharacter_Statics::NewProp_JumpAction = { "JumpAction", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATPSurvivalCharacter, JumpAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_JumpAction_MetaData), NewProp_JumpAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATPSurvivalCharacter_Statics::NewProp_MoveAction = { "MoveAction", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATPSurvivalCharacter, MoveAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MoveAction_MetaData), NewProp_MoveAction_MetaData) };
@@ -287,6 +314,7 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATPSurvivalCha
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATPSurvivalCharacter_Statics::NewProp_SwitchPov = { "SwitchPov", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATPSurvivalCharacter, SwitchPov), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SwitchPov_MetaData), NewProp_SwitchPov_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATPSurvivalCharacter_Statics::NewProp_Interact = { "Interact", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATPSurvivalCharacter, Interact), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Interact_MetaData), NewProp_Interact_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATPSurvivalCharacter_Statics::NewProp_Fire = { "Fire", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATPSurvivalCharacter, Fire), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Fire_MetaData), NewProp_Fire_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATPSurvivalCharacter_Statics::NewProp_Grapple = { "Grapple", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATPSurvivalCharacter, Grapple), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Grapple_MetaData), NewProp_Grapple_MetaData) };
 void Z_Construct_UClass_ATPSurvivalCharacter_Statics::NewProp_bIsAiming_SetBit(void* Obj)
 {
 	((ATPSurvivalCharacter*)Obj)->bIsAiming = 1;
@@ -317,6 +345,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATPSurviv
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATPSurvivalCharacter_Statics::NewProp_TPPCamera,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATPSurvivalCharacter_Statics::NewProp_FPPCamera,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATPSurvivalCharacter_Statics::NewProp_WeaponMesh,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATPSurvivalCharacter_Statics::NewProp_GrappleCable,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATPSurvivalCharacter_Statics::NewProp_DefaultMappingContext,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATPSurvivalCharacter_Statics::NewProp_JumpAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATPSurvivalCharacter_Statics::NewProp_MoveAction,
@@ -326,6 +355,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATPSurviv
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATPSurvivalCharacter_Statics::NewProp_SwitchPov,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATPSurvivalCharacter_Statics::NewProp_Interact,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATPSurvivalCharacter_Statics::NewProp_Fire,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATPSurvivalCharacter_Statics::NewProp_Grapple,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATPSurvivalCharacter_Statics::NewProp_bIsAiming,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATPSurvivalCharacter_Statics::NewProp_bIsTPP,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATPSurvivalCharacter_Statics::NewProp_bIsSprinting,
@@ -378,14 +408,14 @@ ATPSurvivalCharacter::~ATPSurvivalCharacter() {}
 // End Class ATPSurvivalCharacter
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Users_alexa_OneDrive_Documentos_Github_TPSurvival_Source_TPSurvival_TPSurvivalCharacter_h_Statics
+struct Z_CompiledInDeferFile_FID_Users_alexa_OneDrive_Documentos_Github_ProjectSurvival_TPSurvival_Source_TPSurvival_Public_TPSurvivalCharacter_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ATPSurvivalCharacter, ATPSurvivalCharacter::StaticClass, TEXT("ATPSurvivalCharacter"), &Z_Registration_Info_UClass_ATPSurvivalCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATPSurvivalCharacter), 959568343U) },
+		{ Z_Construct_UClass_ATPSurvivalCharacter, ATPSurvivalCharacter::StaticClass, TEXT("ATPSurvivalCharacter"), &Z_Registration_Info_UClass_ATPSurvivalCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATPSurvivalCharacter), 3242490316U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_alexa_OneDrive_Documentos_Github_TPSurvival_Source_TPSurvival_TPSurvivalCharacter_h_1405356761(TEXT("/Script/TPSurvival"),
-	Z_CompiledInDeferFile_FID_Users_alexa_OneDrive_Documentos_Github_TPSurvival_Source_TPSurvival_TPSurvivalCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_alexa_OneDrive_Documentos_Github_TPSurvival_Source_TPSurvival_TPSurvivalCharacter_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_alexa_OneDrive_Documentos_Github_ProjectSurvival_TPSurvival_Source_TPSurvival_Public_TPSurvivalCharacter_h_1835616066(TEXT("/Script/TPSurvival"),
+	Z_CompiledInDeferFile_FID_Users_alexa_OneDrive_Documentos_Github_ProjectSurvival_TPSurvival_Source_TPSurvival_Public_TPSurvivalCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_alexa_OneDrive_Documentos_Github_ProjectSurvival_TPSurvival_Source_TPSurvival_Public_TPSurvivalCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

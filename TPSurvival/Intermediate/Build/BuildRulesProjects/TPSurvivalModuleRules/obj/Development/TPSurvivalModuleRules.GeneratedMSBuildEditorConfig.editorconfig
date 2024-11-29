@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TPSurvivalModuleRules
-build_property.ProjectDir = C:\Users\alexa\OneDrive\Documentos\Github\TPSurvival\Intermediate\Build\BuildRulesProjects\TPSurvivalModuleRules\
+build_property.ProjectDir = C:\Users\alexa\OneDrive\Documentos\Github\ProjectSurvival\TPSurvival\Intermediate\Build\BuildRulesProjects\TPSurvivalModuleRules\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

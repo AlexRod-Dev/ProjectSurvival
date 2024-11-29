@@ -11,6 +11,8 @@
     <None Include="..\..\Source\TPSurvivalEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.vsconfig" />
+    <None Include="..\..\Temp.txt" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -35,23 +37,29 @@
     <None Include="..\..\Source\TPSurvival\TPSurvival.Build.cs">
       <Filter>Source\TPSurvival</Filter>
     </None>
-    <ClCompile Include="..\..\Source\TPSurvival\TPSurvival.cpp">
-      <Filter>Source\TPSurvival</Filter>
+    <Filter Include="Source\TPSurvival\Private">
+      <UniqueIdentifier>{75F0CEEF-4FB1-3B19-96E3-E82DFF26202E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TPSurvival\Private\TPSurvival.cpp">
+      <Filter>Source\TPSurvival\Private</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\TPSurvival\TPSurvival.h">
-      <Filter>Source\TPSurvival</Filter>
+    <ClCompile Include="..\..\Source\TPSurvival\Private\TPSurvivalCharacter.cpp">
+      <Filter>Source\TPSurvival\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TPSurvival\Private\TPSurvivalGameMode.cpp">
+      <Filter>Source\TPSurvival\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\TPSurvival\Public">
+      <UniqueIdentifier>{C49A3649-5DCD-3AA3-BFCA-AB262D9F862B}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\TPSurvival\Public\TPSurvival.h">
+      <Filter>Source\TPSurvival\Public</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\TPSurvival\TPSurvivalCharacter.cpp">
-      <Filter>Source\TPSurvival</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\TPSurvival\TPSurvivalCharacter.h">
-      <Filter>Source\TPSurvival</Filter>
+    <ClInclude Include="..\..\Source\TPSurvival\Public\TPSurvivalCharacter.h">
+      <Filter>Source\TPSurvival\Public</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\TPSurvival\TPSurvivalGameMode.cpp">
-      <Filter>Source\TPSurvival</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\TPSurvival\TPSurvivalGameMode.h">
-      <Filter>Source\TPSurvival</Filter>
+    <ClInclude Include="..\..\Source\TPSurvival\Public\TPSurvivalGameMode.h">
+      <Filter>Source\TPSurvival\Public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

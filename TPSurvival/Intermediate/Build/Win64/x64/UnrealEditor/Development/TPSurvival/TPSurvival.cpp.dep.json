@@ -1,12 +1,12 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\alexa\\onedrive\\documentos\\github\\tpsurvival\\source\\tpsurvival\\tpsurvival.cpp",
+        "Source": "c:\\users\\alexa\\onedrive\\documentos\\github\\projectsurvival\\tpsurvival\\source\\tpsurvival\\private\\tpsurvival.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\users\\alexa\\onedrive\\documentos\\github\\tpsurvival\\intermediate\\build\\win64\\x64\\tpsurvivaleditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "PCH": "c:\\users\\alexa\\onedrive\\documentos\\github\\projectsurvival\\tpsurvival\\intermediate\\build\\win64\\x64\\tpsurvivaleditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
         "Includes": [
-            "c:\\users\\alexa\\onedrive\\documentos\\github\\tpsurvival\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\tpsurvival\\definitions.tpsurvival.h",
-            "c:\\users\\alexa\\onedrive\\documentos\\github\\tpsurvival\\source\\tpsurvival\\tpsurvival.h"
+            "c:\\users\\alexa\\onedrive\\documentos\\github\\projectsurvival\\tpsurvival\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\tpsurvival\\definitions.tpsurvival.h",
+            "c:\\users\\alexa\\onedrive\\documentos\\github\\projectsurvival\\tpsurvival\\source\\tpsurvival\\public\\tpsurvival.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
