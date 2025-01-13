@@ -39,6 +39,7 @@ ATPSurvivalCharacter::ATPSurvivalCharacter()
 	maxWater = 10.0f;//change to 100 after testing
 	currentWater = maxWater;
 
+	maxGrapplingDistance = 1000.0f;
 	
 
 
@@ -114,12 +115,9 @@ void ATPSurvivalCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (bIsGrappling)
-	{
-		GrappleCable->EndLocation = GetActorTransform().InverseTransformPosition(grabPoint);
 
-		GetCharacterMovement()->AddForce((grabPoint - GetActorLocation()).GetSafeNormal() * 100000);
-	}
+		ApplyGrapple();
+	
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -133,6 +131,7 @@ void ATPSurvivalCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInpu
 		// Jumping
 		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Started, this, &ACharacter::Jump);
 		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Completed, this, &ACharacter::StopJumping);
+		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Triggered, this, &ATPSurvivalCharacter::PullTowardGrapple);
 
 		// Moving
 		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ATPSurvivalCharacter::Move);
@@ -156,7 +155,7 @@ void ATPSurvivalCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInpu
 
 		//Grapple
 		EnhancedInputComponent->BindAction(Grapple, ETriggerEvent::Triggered, this, &ATPSurvivalCharacter::FireGrapple);
-		//FInish Grapple
+		//Stop Grapple
 		EnhancedInputComponent->BindAction(Grapple, ETriggerEvent::Completed, this, &ATPSurvivalCharacter::StopGrapple);
 
 
@@ -203,13 +202,23 @@ void ATPSurvivalCharacter::Look(const FInputActionValue& Value)
 	}
 }
 
+void ATPSurvivalCharacter::PullTowardGrapple()
+{
+	if(bIsGrappling)
+	{
+		FVector Direction = (grabPoint - GetActorLocation()).GetSafeNormal();
+		LaunchCharacter(Direction * sprintMovementSpeed, true, true);
+
+	}
+
+}
 void ATPSurvivalCharacter::AimDownSight()
 {
 
 	if (auto camera = GetCameraBoom()) {
 
-		camera->TargetArmLength = 50.0f;
-		camera->SocketOffset = FVector(0.0f, 30.0f, 70.0f);
+		camera->TargetArmLength = 150.0f;
+		camera->SocketOffset = FVector(0.0f, 20.0f, 50.0f);
 
 
 		if (auto characterMovement = GetCharacterMovement()) {
@@ -266,6 +275,8 @@ void ATPSurvivalCharacter::StartSprint()
 			const float InterpSpeed = 5.0f;
 
 			TPPCamera->FieldOfView = FMath::FInterpTo(CurrentFOV, 100.0f, World->GetTimeSeconds(), InterpSpeed);
+
+			
 
 		}
 
@@ -378,7 +389,7 @@ void ATPSurvivalCharacter::FireGrapple()
 	
 
 	FVector TraceStart = GetMesh()->GetSocketLocation("head");
-	FVector TraceEnd = (GetFollowCamera()->GetForwardVector() * 1000.0f + TraceStart);
+	FVector TraceEnd = (GetFollowCamera()->GetForwardVector() * maxGrapplingDistance + TraceStart);
 
 
 	//DrawDebugLine(GetWorld(), TraceStart, TraceEnd, FColor::Emerald);
@@ -418,4 +429,31 @@ void ATPSurvivalCharacter::StopGrapple()
 	GrappleCable->SetVisibility(false);
 
 
+}
+
+void ATPSurvivalCharacter::ApplyGrapple(){
+
+	if (!bIsGrappling) { return; }
+
+	FVector GrappleDiff = grabPoint - GetActorLocation();
+
+	if (GrappleDiff.Length() < currentGrapplingDistance) { return; }
+
+	GrappleCable->EndLocation = GetActorTransform().InverseTransformPosition(grabPoint);
+
+
+	FVector Vel = GetVelocity();
+	FVector NormalTowardsGrapplePoint = GrappleDiff.GetSafeNormal();
+	FVector VelNormal = Vel.GetSafeNormal();
+
+	float AngleBetweenVelocityAndGrapple = UKismetMathLibrary::DegAcos(VelNormal.Dot(NormalTowardsGrapplePoint));
+
+	if (AngleBetweenVelocityAndGrapple < 90) { return; }
+
+	FVector NewVelocity = UKismetMathLibrary::ProjectVectorOnToPlane(Vel, NormalTowardsGrapplePoint);
+
+	LaunchCharacter(NewVelocity, true, true);
+
+	
+	
 }

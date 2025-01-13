@@ -140,6 +140,8 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = CharacterMovement)
 	float sprintMovementSpeed;
 
+
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Combat)
 	float currentHealth;
 
@@ -163,31 +165,38 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Collision")
 	TEnumAsByte<ECollisionChannel> TraceChannelProperty = ECC_Pawn;
 
-protected:
 
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category = CharacterMovement)
+	float maxGrapplingDistance;
 
-	void AimDownSight();
-	void StopAimDownSight();
-
-	void StartSprint();
-	void StopSprint();
-
-	void SwitchCamera();
-
-	void FireGrapple();
-	void StopGrapple();
-
-	void WaterDecrement();
-	void FoodDecrement();
-	void Use();
-
-
-private:
-
-	float maxLineDistance = 1600.f;
+	float currentGrapplingDistance;
+	
 	bool bIsGrappling = false;
 	FVector grabPoint;
 
-}
-;
+
+protected:
+
+		void PullTowardGrapple();
+		void AimDownSight();
+		void StopAimDownSight();
+
+		void StartSprint();
+		void StopSprint();
+
+		void SwitchCamera();
+
+		void FireGrapple();
+		void StopGrapple();
+
+		void WaterDecrement();
+		void FoodDecrement();
+		void Use();
+
+		void ApplyGrapple();
+
+
+
+
+};
 
