@@ -220,7 +220,7 @@ void ATPSurvivalCharacter::AimDownSight()
 		camera->TargetArmLength = 150.0f;
 		camera->SocketOffset = FVector(0.0f, 20.0f, 50.0f);
 
-
+		
 		if (auto characterMovement = GetCharacterMovement()) {
 
 			characterMovement->MaxWalkSpeed = sneakMovementSpeed;
